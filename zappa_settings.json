@@ -7,7 +7,6 @@
             ".git/*",
             ".gitignore",
             ".python-version",
-            "LICENSE",
             "README.md",
             "requirements.txt",
             "zappa_settings.json"
@@ -23,7 +22,6 @@
         "timeout_seconds": 30,
         "log_level": "INFO",
         "environment_variables": {
-            "PYTHONPATH": "src/",
             "SLACK_API_KEY": "xxx",
             "SLACK_VERIFICATION_TOKEN": "xxx",
             "SLACK_TEAM_ID": "xxx"
