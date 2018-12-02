@@ -1,0 +1,32 @@
+{
+    "prod": {
+        "app_function": "app.app",
+        "aws_region": "eu-central-1",
+        "exclude": [
+            "__pycache__",
+            ".git/*",
+            ".gitignore",
+            ".python-version",
+            "LICENSE",
+            "README.md",
+            "requirements.txt",
+            "zappa_settings.json"
+        ],
+        "keep_warm": true,
+        "keep_warm_expression": "rate(5 minutes)",
+        "memory_size": 128,
+        "profile_name": "default",
+        "project_name": "lauzhack-live-backend",
+        "lambda_description": "Lambda function to handle LauzHack Live announcements",
+        "runtime": "python3.6",
+        "s3_bucket": "lauzhack-live-backend",
+        "timeout_seconds": 30,
+        "log_level": "INFO",
+        "environment_variables": {
+            "PYTHONPATH": "src/",
+            "SLACK_API_KEY": "xxx",
+            "SLACK_VERIFICATION_TOKEN": "xxx",
+            "SLACK_TEAM_ID": "xxx"
+        }
+    }
+}
